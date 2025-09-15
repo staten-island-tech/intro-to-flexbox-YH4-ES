@@ -1,0 +1,45 @@
+body, html
+*{
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+
+}
+body {
+    background-color: midnightblue;
+
+}
+
+.card{
+    width: 30%;
+    height: 500px;
+    background-color: darkcyan;
+    margin: 25px 0;
+
+
+}
+
+.container {
+    width: 90vw;
+    background-color: whitesmoke;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card img{
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+    height: 60%;
+}
+
+.card header{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    position: relative;
+}
