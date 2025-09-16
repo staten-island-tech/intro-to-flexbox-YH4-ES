@@ -7,7 +7,7 @@ body, html
 
 }
 body {
-    background-color: midnightblue;
+    background-color: rgb(1, 35, 51);
 
 }
 
@@ -76,4 +76,6 @@ body {
 .linkcard{
     width: 30%;
     text-decoration: none;
+    height: 450px;
+    margin: 25px 0;
 }
