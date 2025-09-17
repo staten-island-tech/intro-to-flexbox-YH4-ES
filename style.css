@@ -30,6 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: normal;
    
 }
 
@@ -48,8 +49,14 @@ body {
     height: auto;
     margin: 20px auto;
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "width" 100;
 }
 
 .price{
@@ -74,7 +81,7 @@ body {
 }
 
 .linkcard{
-    width: 30%;
+    width: 22%;
     text-decoration: none;
     height: 450px;
     margin: 25px 0;
