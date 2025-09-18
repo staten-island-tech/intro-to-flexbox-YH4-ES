@@ -85,4 +85,17 @@ body {
     text-decoration: none;
     height: 450px;
     margin: 25px 0;
+    transition: 0.13s;
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+    .linkcard{
+        width:100%
+    }
+}
+.linkcard:hover{
+    transform: translateY(10px);
 }
