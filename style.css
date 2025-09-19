@@ -13,14 +13,14 @@ body {
 
 .card{
     width: 100%;
-    height: 450px;
+    min-height: 450px;
     background-color: darkcyan;
     margin: 0 0;
     border-radius: 20px;
     left: 0;
     position: relative;
-    object-fit: contain;
-    word-wrap: break-word;
+    height:auto;
+    line-break: normal;
 
 
 }
@@ -64,20 +64,21 @@ body {
 .price{
     width: 90%;
     height: auto;
-    margin: 10px auto;
+    margin: 20px auto;
     position: relative;
     font-size: 1rem;
-    top: 10px;
+    top: 0;
 }
 
 .morelink{
     display: block;
     width: 90%;
     margin: 20px auto;
+    line-break:strict;
 }
 .cardsub{
     background-color: #0d171c;
-    height: 85%;
+    height: 382.5px;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -93,6 +94,16 @@ body {
     box-shadow: 1px 2px 5px 5px black;
 }
 
+@media screen and (max-width: 1500px){
+    #Lint{
+        word-break: break-all;
+    }
+    .html{
+        background-color: red;
+    }
+}
+
+
 @media screen and (max-width: 1000px) {
     .container{
         flex-direction: column;
@@ -104,3 +115,5 @@ body {
 .linkcard:hover{
     transform: translateY(10px);
 }
+
+ 
