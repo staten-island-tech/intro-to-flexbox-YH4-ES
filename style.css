@@ -88,7 +88,7 @@ body {
     text-decoration: none;
     height: 450px;
     margin: 25px 0;
-    transition: 0.13s;
+    transition: 0.13s cubic-bezier(0,1.27,.81,1.29);
     border-radius: 20px;
     
     box-shadow: 1px 2px 5px 5px black;
@@ -114,7 +114,7 @@ body {
     }
 }
 .linkcard:hover{
-    transform: translateY(10px);
+    transform: translateY(20px) ;
 }
 
  
