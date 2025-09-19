@@ -107,6 +107,7 @@ body {
 @media screen and (max-width: 1000px) {
     .container{
         flex-direction: column;
+        transition-timing-function: cubic-bezier(.47,1.23,.75,1.11)
     }
     .linkcard{
         width:100%
