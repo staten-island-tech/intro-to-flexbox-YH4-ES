@@ -117,4 +117,8 @@ body {
     transform: translateY(20px) ;
 }
 
- 
+.thethings{
+    display:block;
+    margin: 10px auto;
+    align-items: center;
+}
