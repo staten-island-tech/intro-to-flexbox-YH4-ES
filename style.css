@@ -122,3 +122,26 @@ body {
     margin: 10px auto;
     align-items: center;
 }
+
+button{
+    background-color: rgb(1, 35, 51);
+    color: cadetblue;
+    font-size: 1.5rem;
+    border: 0;
+    padding: 10px 20px;
+    cursor: auto;
+    transition: 0.13s cubic-bezier(0,1.27,.81,1.29);
+    text-decoration: overline;
+}
+
+.toShowAndToKnow{
+    display:block;
+    color: #e3f086;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px 50px;
+    font-family: 'Comic Sans MS', monospace;
+    position: relative;
+    width: fit-content;
+    left: 75%;
+}

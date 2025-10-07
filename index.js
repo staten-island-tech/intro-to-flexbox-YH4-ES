@@ -1,11 +1,14 @@
 const DOMSelectors = {
-  fictional: document.getElementById("fiction"),
-  artist: document.getElementById("artist"),
-  url: document.getElementById("url"),
-  display: document.getElementById("display"),
-};
+  fictional: document.querySelectorAll(".fiction"),
+  container: document.querySelector(".container"),
+}; //losing my mind.
 
-DOMSelectors.fictional.addEventListener("click", function () {
-  DOMSelectors.display.style.backgroundImage =
-    "url('https://media.istockphoto.com/id/1147544807/photo/white-wooden-chair-on-white-background.jpg?s=612x612&w=0&k=20&c=ZkLh1jv2YHk3r8bX6v5nUu0KXrE1m8g9H3pX4KJt2g=')";
-});
+function inject() { //Trying to get this button to inject. Reminder to delete old stuff.
+  DOMSelectors.container.innerHTML = ""; //to clear
+
+  DOMSelectors.fictional.forEach(item => { //to inject
+    DOMSelectors.container.insertAdjacentHTML("afterbegin", item. outerHTML);
+  });
+}
+document.getElementById("piratebutton").addEventListener("click", inject);
+console.log(DOMSelectors.fictional);
