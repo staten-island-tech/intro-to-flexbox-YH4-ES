@@ -132,6 +132,8 @@ button{
     cursor: auto;
     transition: 0.13s cubic-bezier(0,1.27,.81,1.29);
     text-decoration: overline;
+
+    cursor: pointer;
 }
 
 .toShowAndToKnow{
@@ -161,9 +163,10 @@ button{
 }
 
 .playItOnAndNeverStop{
-    height: 170px;
+    width: 170px;
     position: absolute;
-    left: 80%;
+    left: 84%;
     top:6px;
     margin: 0px;
+    
 }
