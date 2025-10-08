@@ -4,6 +4,8 @@ body, html
     box-sizing: border-box;
     margin: 0px;
     padding: 0;
+    overflow: hidden;
+    
 
 }
 body {
@@ -102,7 +104,27 @@ body {
         background-color: red;
     }
 }
-
+@media screen and (max-width: 1200px) {
+    .toShowAndToKnow
+    {
+        left: 50%;
+        transform: translateX(-50vw);
+        max-width: 90%;
+        
+    }
+    .thecurrentShow{
+        left: 0;
+        transform: translateX(-50vw);
+        max-width: 90%;
+    }
+    .playItOnAndNeverStop{
+        left: 0;
+        top:0;
+        width: 50px;
+        position: relative;
+        transform: translateX(-30vw);
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .container{
@@ -113,6 +135,12 @@ body {
         width:100%
     }
 }
+@media screen and (max-width: 740px) {
+    .playItOnAndNeverStop{
+        transform: translate(-10vw);
+    }
+}
+
 .linkcard:hover{
     transform: translateY(20px) ;
 }
@@ -145,6 +173,10 @@ button{
     position: relative;
     width: fit-content;
     left: 60%;
+
+    max-width: 40%;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 .thecurrentShow{
     color: #e3f086;
@@ -155,11 +187,16 @@ button{
     position: relative;
     width: fit-content;
     left: 60%;
+    max-width: 40%;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .whenYouKnowYourself{
     display: flex;
     align-items: center;
+    overflow-wrap: break-word;
+    padding: 0;
 }
 
 .playItOnAndNeverStop{
