@@ -9,6 +9,7 @@ function inject() { //Trying to get this button to inject. Reminder to delete ol
   DOMSelectors.fictional.forEach(item => { //to inject
     DOMSelectors.container.insertAdjacentHTML("afterbegin", item. outerHTML);
   });
+  document.querySelector(".thecurrentShow").textContent = "Welcome to the Fiction.";
 }
-document.getElementById("piratebutton").addEventListener("click", inject);
+document.getElementById("fictionbutton").addEventListener("click", inject);
 console.log(DOMSelectors.fictional);
