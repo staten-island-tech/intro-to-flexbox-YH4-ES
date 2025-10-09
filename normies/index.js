@@ -24,10 +24,34 @@ const fiction =[
     tle: "Flexbox Page.",
     apce: 7,
     pce: "Pizza, I'm hungry.",
-    img: "normies/Screenshot (1).png",
+    img: "Screenshot.png",
     lnk: "https://flexboxupload.netlify.app/"
   }
  
+]
+
+const eternalEnemy =[
+  {
+    lnk: "https://www.youtube.com/watch?v=kRPGPAnPNa8",
+    tle: "Los Angelos",
+    apce: 7,
+    pce: "7 Bucks, Canadian. Nobody wants this.",
+    img: "LOSANGOL.png",
+  },
+  {
+    lnk: "https://www.bing.com/ck/a?!&&p=08bb383aa21ddc438fa21cb304298bd0bf09e2dc97e958c6fd0adbf442691a24JmltdHM9MTc1ODA2NzIwMA&ptn=3&ver=2&hsh=4&fclid=2ccd128f-1513-69d6-2631-04ea14206861&psq=lint&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2xpbnQ",
+    tle: "Piece of lint: Kitchen",
+    apce: 80,
+    pce: "80$ auction price.",
+    img: "https://i.pinimg.com/736x/34/3c/30/343c30da58a7a3935e8b51c996094134.jpg",
+  },
+  {
+    lnk:"https://www.bing.com/videos/riverview/relatedvideo?q=baby+shark&&mid=07FEB0F7253CC37B37D707FEB0F7253CC37B37D7&mcid=BEE95343EA6A4B9E9E3431AB18E471D9&FORM=VCGVRP",
+    tle: "John from accounting",
+    img: "https://www.ikea.com/us/en/images/products/blahaj-soft-toy-shark__0710175_pe727378_s5.jpg?f=xl",
+    pce: "Liver (557000)",
+    apce: 557000,
+  }
 ]
 /*  {
     tle: "Piece of lint: Kitchen",
@@ -50,15 +74,20 @@ const DOMSelectors = {
   container: document.querySelector(".container"),
 }; //losing my mind.
 
-function injectFiction() {
+/* function injectFiction() {
   DOMSelectors.container.innerHTML = ""; //to clear
 
-  /* DOMSelectors.fictional.forEach(item => { //to inject
-    DOMSelectors.container.insertAdjacentHTML("afterbegin", item. outerHTML); */
-    fiction.forEach(item => {
-      DOMSelectors.container.insertAdjacentHTML("afterbegin", 
-        
-  };
+  DOMSelectors.fictional.forEach(item => { //to inject
+    DOMSelectors.container.insertAdjacentHTML("afterbegin", item. outerHTML);
+  fiction.forEach((element) => {
+    DOMSelectors.container.insertAdjacentHTML("afterbegin", 
+      <a class="linkcard fiction" href="${element.lnk}" target="_blank">
+        <img src="${element.img}" alt="${element.tle}"></img>
+        <h3>${element.tle}</h3>
+        <p>${element.pce}</p>
+      </a>
+    );   
+  });
   document.querySelector(".toShowAndToKnow").textContent = "Now Showing:";
   document.querySelector(".thecurrentShow").textContent = "Welcome to the Fiction.";
   document.getElementById("plentyOfExuberance").volume = 0.3;
@@ -66,6 +95,36 @@ function injectFiction() {
   document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
   document.getElementById("fictionbutton").style.color="pink";
 
+} */
+
+function injectFictionless() {
+  DOMSelectors.container.innerHTML = ""; //to clear
+  
+  fiction.forEach(Element => { //to inject
+    DOMSelectors.container.insertAdjacentHTML("beforeend", 
+      `<a class="linkcard fiction" href="${Element.lnk}">
+        <div class="card">
+          <div class="cardsub">
+            <h2 class="card-header">${Element.tle}</h2>
+            <img
+              class="card-img"
+              src=${Element.img}
+              alt=""
+            />
+          </div>
+          <h3 class="price">${Element.pce}</h3>
+        </div>
+      </a>`
+
+      );
+  });
+  document.querySelector(".toShowAndToKnow").textContent = "Now Showing:";
+  document.querySelector(".thecurrentShow").textContent = "Welcome to the Fiction.";
+  document.getElementById("plentyOfExuberance").volume = 0.3;
+  document.getElementById("plentyOfExuberance").play();
+  document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
+  document.getElementById("fictionbutton").style.color="pink";
 }
-document.getElementById("fictionbutton").addEventListener("click", injectFiction);
+
+document.getElementById("fictionbutton").addEventListener("click", () => {injectFictionless(fiction)});
 
