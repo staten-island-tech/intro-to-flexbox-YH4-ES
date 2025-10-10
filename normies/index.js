@@ -135,8 +135,7 @@ const DOMSelectors = {
   document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
   document.getElementById("fictionbutton").style.color="pink";
 
-} */
-
+} */ //YOU KNOW I WOULD INFINITELY RATHER DO THIS BUT I CANT APPARENTLY
 function injectFictionless(thing) {
   DOMSelectors.container.innerHTML = ""; //to clear
   
@@ -160,7 +159,29 @@ function injectFictionless(thing) {
   });
   
 }
+function injectFictionlessButLiterallyJustWithoutClear(thing) {
+  
+  thing.forEach(Element => { //to inject
+    DOMSelectors.container.insertAdjacentHTML("beforeend", 
+      `<a class="linkcard fiction" href="${Element.lnk}">
+        <div class="card">
+          <div class="cardsub">
+            <h2 class="card-header">${Element.tle}</h2>
+            <img
+              class="card-img"
+              src=${Element.img}
+              alt=""
+            />
+          </div>
+          <h3 class="price">${Element.pce}</h3>
+        </div>
+      </a>`
 
+      );
+  });
+  
+}
+injectFictionlessButLiterallyJustWithoutClear(theitems.fiction); injectFictionlessButLiterallyJustWithoutClear(theitems.yARHAR); injectFictionlessButLiterallyJustWithoutClear(theitems.eternalEnemy);document.querySelector(".thecurrentShow").textContent = "Blahblahblah, lame";
 function thefiction(){
   document.querySelector(".toShowAndToKnow").textContent = "Now Showing:";
   document.querySelector(".thecurrentShow").textContent = "Welcome to the Fiction.";
@@ -168,6 +189,10 @@ function thefiction(){
   document.getElementById("plentyOfExuberance").play();
   document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
   document.getElementById("fictionbutton").style.color="pink";
+  document.getElementById("mynemesis").style.backgroundColor="transparent";
+  document.getElementById("mynemesis").style.color="cadetblue";
+  document.getElementById("piratebutton").style.color="cadetblue";
+  document.getElementById("normaltacular").style.color="cadetblue";
 }
 //I dont know how to make this thing accept functions so
 function theEternal(){
@@ -178,17 +203,37 @@ function theEternal(){
   document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
   document.getElementById("mynemesis").style.color="black";
   document.getElementById("mynemesis").style.backgroundColor="white";
+  document.getElementById("fictionbutton").style.color="cadetblue";
+  document.getElementById("piratebutton").style.color="cadetblue";
+  document.getElementById("normaltacular").style.color="cadetblue";
 } //REMINDER: ADD SONG
 function aPIRATEISTHEBESTTOBE(){
   document.querySelector(".toShowAndToKnow").textContent = "Now Showing:";
-  document.querySelector(".thecurrentShow").textContent = "YEE MATIES WE GON' SET SAIL ON HIGHER SEAS THAN YER' MOM WENT FO' THE DRINKS ON THIS OL BANDWAGON O LIES YE HEAR CAUSE WHEN I SMOKE I SMOKE EM BIG AND YOU DONT WANNA SEE EM BIG TILL YOURE DONE IN LIKE YESTERDAYS SHAMPOO.";
+  document.querySelector(".thecurrentShow").textContent = "YEE MATIES WE GON' SET SAIL ON HIGHER SEAS THAN YER' MOM WENT FO' THE DRINKS ON THIS OL BANDWAGON O LIES YE HEAR CAUSE WHEN I SMOKE I SMOKE EM BIG AND YOU DONT WANNA SEE EM BIG TILL YOURE DONE IN LIKE YESTERDAYS SHAMPOO. WHEN YOU MEET DAVEY JONES IN HE LOCKER INVITEHIM FOR A ROUND O BASEKET O BALL WITH LE THE BRON JAH AMES ON THE FIELD DOING BACKLINERS AR MATEY";
   document.getElementById("plentyOfExuberance").volume = 0.3;
   document.getElementById("plentyOfExuberance").play();
   document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
   document.getElementById("piratebutton").style.color="#FECC35";
+  document.querySelector(".container").style.position="absolute";
+  document.getElementById("fictionbutton").style.color="cadetblue";
+  document.getElementById("mynemesis").style.color="cadetblue";
+  document.getElementById("normaltacular").style.color="cadetblue";
+  document.getElementById("mynemesis").style.backgroundColor="transparent";
+} //REMINDER: ADD SONG
+function ALLMYSKRUNKLES(){
+  document.querySelector(".toShowAndToKnow").textContent = "Now Showing:";
+  document.querySelector(".thecurrentShow").textContent = "YEAHHHHH BABY";
+  document.getElementById("plentyOfExuberance").volume = 0.3;
+  document.getElementById("plentyOfExuberance").play();
+  document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
+  document.getElementById("normaltacular").style.color="white";
+  document.getElementById("fictionbutton").style.color="cadetblue";
+  document.getElementById("mynemesis").style.color="cadetblue";
+  document.getElementById("piratebutton").style.color="cadetblue";
+  document.getElementById("mynemesis").style.backgroundColor="transparent";
 } //REMINDER: ADD SONG
 
 document.getElementById("fictionbutton").addEventListener("click", () => {injectFictionless(theitems.fiction); thefiction()});
 document.getElementById("piratebutton").addEventListener("click", () => {injectFictionless(theitems.yARHAR); aPIRATEISTHEBESTTOBE()});
 document.getElementById("mynemesis").addEventListener("click", () => {injectFictionless(theitems.eternalEnemy); theEternal()});
-
+document.getElementById("normaltacular").addEventListener("click", () => {injectFictionlessButLiterallyJustWithoutClear(theitems.fiction); injectFictionlessButLiterallyJustWithoutClear(theitems.yARHAR); injectFictionlessButLiterallyJustWithoutClear(theitems.eternalEnemy); ALLMYSKRUNKLES()});
