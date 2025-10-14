@@ -173,10 +173,12 @@ button{
     position: relative;
     width: fit-content;
     left: 60%;
-
     max-width: 40%;
     overflow-wrap: break-word;
     word-break: break-word;
+    pointer-events: none;
+    z-index: 4;
+    position: relative
 }
 .thecurrentShow{
     color: #e3f086;
@@ -186,10 +188,12 @@ button{
     font-family: 'Comic Sans MS', monospace;
     position: relative;
     width: fit-content;
-    left: 60%;
+    left: 68%;
     max-width: 40%;
     overflow-wrap: break-word;
     word-break: break-word;
+    position: absolute;
+
 }
 
 .whenYouKnowYourself{

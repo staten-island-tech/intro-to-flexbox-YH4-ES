@@ -10,14 +10,14 @@ const theitems ={
     {
       tle: "A white house.",
       apce: 1,
-      pce: "SlightlyLargerThanAverageSizedLint, Indian.",
+      pce: "SlightlyLargerThanAverageSizedLint worth 1 dollar, Indian.",
       img:"https://cdn.britannica.com/43/93843-050-A1F1B668/White-House-Washington-DC.jpg",
       lnk:"https://www.google.com/maps/place/The+White+House/@38.8976763,-77.0391047,17z/data=!3m1!4b1!4m6!3m5!1s0x89b7b7bcdecbb1df:0x715969d86d0b76bf!8m2!3d38.8976763!4d-77.0365298!16zL20vMDgxc3E?entry=ttu&g_ep=EgoyMDI1MDkxNC4wIKXMDSoASAFQAw%3D%3D"
     },
     {
       tle: "Flexbox Page.",
       apce: 7,
-      pce: "Pizza, I'm hungry.",
+      pce: "Dominos 7 dollar Pizza, I'm hungry.",
       img: "Screenshot.png",
       lnk: "https://flexboxupload.netlify.app/"
     }
@@ -26,7 +26,7 @@ const theitems ={
     {
       tle: "Slightly larger piece of lint",
       apce: 18,
-      pce: "18 Bitcoin, Haggleable.",
+      pce: "18 Dollars worth of Bitcoin, Haggleable.",
       img: "https://lhtcooling.com/wp-content/uploads/2019/11/Lint-from-dryer-vent-1.jpg",
       lnk: "https://www.bing.com/ck/a?!&&p=1bbe8a6a756a348f130b12dc7ce92e84adab890802e4a42cd6e47c7464b16994JmltdHM9MTc1ODA2NzIwMA&ptn=3&ver=2&hsh=4&fclid=2ccd128f-1513-69d6-2631-04ea14206861&psq=moss&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTW9zcw"
 
@@ -88,7 +88,7 @@ const theitems ={
       lnk:"https://www.bing.com/videos/riverview/relatedvideo?q=baby+shark&&mid=07FEB0F7253CC37B37D707FEB0F7253CC37B37D7&mcid=BEE95343EA6A4B9E9E3431AB18E471D9&FORM=VCGVRP",
       tle: "John from accounting",
       img: "https://www.ikea.com/us/en/images/products/blahaj-soft-toy-shark__0710175_pe727378_s5.jpg?f=xl",
-      pce: "Liver (557000)",
+      pce: "Liver (557000$)",
       apce: 557000,
     }
   ]
@@ -193,47 +193,74 @@ function thefiction(){
   document.getElementById("mynemesis").style.color="cadetblue";
   document.getElementById("piratebutton").style.color="cadetblue";
   document.getElementById("normaltacular").style.color="cadetblue";
+  document.querySelector(".thecurrentShow").style.left = "72vw";
+  document.getElementById("zenith").pause();
+  document.getElementById("zenith").currentTime = 0;
+  document.getElementById("pirateMusic").pause();
+  document.getElementById("pirateMusic").currentTime = 0;
+  document.getElementById("fellas").pause();
+  document.getElementById("fellas").currentTime = 0;
 }
 //I dont know how to make this thing accept functions so
 function theEternal(){
   document.querySelector(".toShowAndToKnow").textContent = "Now Showing:";
   document.querySelector(".thecurrentShow").textContent = "My Mortal Enemies.";
-  document.getElementById("plentyOfExuberance").volume = 0.3;
-  document.getElementById("plentyOfExuberance").play();
+  document.getElementById("zenith").volume = 0.3;
+  document.getElementById("zenith").play();
   document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
   document.getElementById("mynemesis").style.color="black";
   document.getElementById("mynemesis").style.backgroundColor="white";
   document.getElementById("fictionbutton").style.color="cadetblue";
   document.getElementById("piratebutton").style.color="cadetblue";
   document.getElementById("normaltacular").style.color="cadetblue";
+  document.querySelector(".thecurrentShow").style.left = "72vw";
+  document.getElementById("pirateMusic").pause();
+  document.getElementById("pirateMusic").currentTime = 0;
+  document.getElementById("plentyOfExuberance").pause();
+  document.getElementById("plentyOfExuberance").currentTime = 0;
+  document.getElementById("fellas").pause();
+  document.getElementById("fellas").currentTime = 0;
 } //REMINDER: ADD SONG
 function aPIRATEISTHEBESTTOBE(){
   document.querySelector(".toShowAndToKnow").textContent = "Now Showing:";
-  document.querySelector(".thecurrentShow").textContent = "YEE MATIES WE GON' SET SAIL ON HIGHER SEAS THAN YER' MOM WENT FO' THE DRINKS ON THIS OL BANDWAGON O LIES YE HEAR CAUSE WHEN I SMOKE I SMOKE EM BIG AND YOU DONT WANNA SEE EM BIG TILL YOURE DONE IN LIKE YESTERDAYS SHAMPOO. WHEN YOU MEET DAVEY JONES IN HE LOCKER INVITEHIM FOR A ROUND O BASEKET O BALL WITH LE THE BRON JAH AMES ON THE FIELD DOING BACKLINERS AR MATEY";
-  document.getElementById("plentyOfExuberance").volume = 0.3;
-  document.getElementById("plentyOfExuberance").play();
+  document.querySelector(".thecurrentShow").textContent = "YEE MATIES WE GON' SET SAIL ON HIGHER SEAS THAN YER' MOM WENT FO' THE DRINKS ON THIS OL BANDWAGON O LIES YE HEAR CAUS' WHEN THYNE SMOKE I SMOKE EM' BIG AND YA' DONT WANNA SAW'N BIG TILL YA' DON' 'N LIKE YESTER'S SHAMPOO. WHEN YOU MEET DAVEY JONES IN HE LOCKER INVITEHIM FOR A ROUND O BASEKET O BALL WITH LE THE BRON JAH AMES ON THE FIELD DOING BACKLINERS AR MATEY";
+  document.getElementById("pirateMusic").volume = 0.3;
+  document.getElementById("pirateMusic").play();
   document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
   document.getElementById("piratebutton").style.color="#FECC35";
-  document.querySelector(".container").style.position="absolute";
   document.getElementById("fictionbutton").style.color="cadetblue";
   document.getElementById("mynemesis").style.color="cadetblue";
   document.getElementById("normaltacular").style.color="cadetblue";
   document.getElementById("mynemesis").style.backgroundColor="transparent";
+  document.querySelector(".thecurrentShow").style.left = "72vw";
+  document.getElementById("zenith").pause();
+  document.getElementById("zenith").currentTime = 0;
+  document.getElementById("plentyOfExuberance").pause();
+  document.getElementById("plentyOfExuberance").currentTime = 0;
+  document.getElementById("fellas").pause();
+  document.getElementById("fellas").currentTime = 0;
 } //REMINDER: ADD SONG
 function ALLMYSKRUNKLES(){
   document.querySelector(".toShowAndToKnow").textContent = "Now Showing:";
   document.querySelector(".thecurrentShow").textContent = "YEAHHHHH BABY";
-  document.getElementById("plentyOfExuberance").volume = 0.3;
-  document.getElementById("plentyOfExuberance").play();
+  document.getElementById("fellas").volume = 0.3;
+  document.getElementById("fellas").play();
   document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
   document.getElementById("normaltacular").style.color="white";
   document.getElementById("fictionbutton").style.color="cadetblue";
   document.getElementById("mynemesis").style.color="cadetblue";
   document.getElementById("piratebutton").style.color="cadetblue";
   document.getElementById("mynemesis").style.backgroundColor="transparent";
+  document.querySelector(".thecurrentShow").style.left = "72vw";
+  document.getElementById("zenith").pause();
+  document.getElementById("zenith").currentTime = 0;
+  ocument.getElementById("pirateMusic").pause();
+  document.getElementById("pirateMusic").currentTime = 0;
+  document.getElementById("plentyOfExuberance").pause();
+  document.getElementById("plentyOfExuberance").currentTime = 0;
 } //REMINDER: ADD SONG
 
 document.getElementById("fictionbutton").addEventListener("click", () => {injectFictionless(theitems.fiction); thefiction()});
 document.getElementById("piratebutton").addEventListener("click", () => {injectFictionless(theitems.yARHAR); aPIRATEISTHEBESTTOBE()});
 document.getElementById("mynemesis").addEventListener("click", () => {injectFictionless(theitems.eternalEnemy); theEternal()});
-document.getElementById("normaltacular").addEventListener("click", () => {injectFictionlessButLiterallyJustWithoutClear(theitems.fiction); injectFictionlessButLiterallyJustWithoutClear(theitems.yARHAR); injectFictionlessButLiterallyJustWithoutClear(theitems.eternalEnemy); ALLMYSKRUNKLES()});
+document.getElementById("normaltacular").addEventListener("click", () => {injectFictionless(theitems.fiction); injectFictionlessButLiterallyJustWithoutClear(theitems.yARHAR); injectFictionlessButLiterallyJustWithoutClear(theitems.eternalEnemy); ALLMYSKRUNKLES()});
