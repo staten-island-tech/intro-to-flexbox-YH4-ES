@@ -88,7 +88,7 @@ body {
 .linkcard{
     width: 22%;
     text-decoration: none;
-    height: 450px;
+    min-height: 450px;
     margin: 25px 0;
     transition: 0.13s cubic-bezier(0,1.27,.81,1.29);
     border-radius: 20px;
@@ -210,4 +210,25 @@ button{
     top:6px;
     margin: 0px;
     
+}
+
+.cart{
+    width: 50%;
+    height: 300px;
+    background-color: black;
+    margin: 20px auto;
+}
+.dumbCartDumb{
+    color: greenyellow;
+    text-align: center;
+    font-size: 3rem;
+    padding: 50px 0;
+    font-family: consolas, monospace;
+}
+.extra{
+    color: green;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: consolas, monospace;
+    margin-top: -5px;
 }
