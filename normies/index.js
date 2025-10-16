@@ -6,6 +6,7 @@ const theitems = {
       pce: "5 bucks, Jamaican",
       img: "https://habitatrestore.ca/cdn/shop/files/BemisToiletSeat200TC-CottonWhite-Plumbing-HabitatforHumanityHabitatReStoreGTA-ThriftFurnitureStore-1_3.jpg?v=1753193281&width=1200",
       lnk: "https://www.bing.com/ck/a?!&&p=07be586372e6ca31dd392f37d3a2a62b955b7fa2c6f8a76205716ae57b049a61JmltdHM9MTc1ODA2NzIwMA&ptn=3&ver=2&hsh=4&fclid=2ccd128f-1513-69d6-2631-04ea14206861&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9amFtYWNpYW4rYW50aGVtJm1pZD01RTU4RTk0RDIyREQxOUMwOUU4NDVFNThFOTREMjJERDE5QzA5RTg0Jm1jaWQ9NjNBQUVCM0JGODU0NERBMEEzQUM2QTI5NTNBNTY3NEUmRk9STT1WSVJF",
+      data: "toilet_but_seat",
     },
     {
       tle: "A white house.",
@@ -13,6 +14,7 @@ const theitems = {
       pce: "SlightlyLargerThanAverageSizedLint worth 1 dollar, Indian.",
       img: "https://cdn.britannica.com/43/93843-050-A1F1B668/White-House-Washington-DC.jpg",
       lnk: "https://www.google.com/maps/place/The+White+House/@38.8976763,-77.0391047,17z/data=!3m1!4b1!4m6!3m5!1s0x89b7b7bcdecbb1df:0x715969d86d0b76bf!8m2!3d38.8976763!4d-77.0365298!16zL20vMDgxc3E?entry=ttu&g_ep=EgoyMDI1MDkxNC4wIKXMDSoASAFQAw%3D%3D",
+      data: "whitehouse",
     },
     {
       tle: "Flexbox Page.",
@@ -20,6 +22,7 @@ const theitems = {
       pce: "Dominos 7 dollar Pizza, I'm hungry.",
       img: "Screenshot.png",
       lnk: "https://flexboxupload.netlify.app/",
+      data: "flexbox",
     },
   ],
   yARHAR: [
@@ -30,6 +33,7 @@ const theitems = {
       pce: "18 Dollars worth of Bitcoin, Haggleable.",
       img: "https://lhtcooling.com/wp-content/uploads/2019/11/Lint-from-dryer-vent-1.jpg",
       lnk: "https://www.bing.com/ck/a?!&&p=1bbe8a6a756a348f130b12dc7ce92e84adab890802e4a42cd6e47c7464b16994JmltdHM9MTc1ODA2NzIwMA&ptn=3&ver=2&hsh=4&fclid=2ccd128f-1513-69d6-2631-04ea14206861&psq=moss&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTW9zcw",
+      data: "biglint",
     },
     {
       tle: "AirHose™",
@@ -37,6 +41,7 @@ const theitems = {
       pce: "Pi Bucks, Japanese",
       img: "https://preview.redd.it/pd2t9ptbkwaz.jpg?width=640&crop=smart&auto=webp&s=8d2f619bb225122a79a4210f738e60e43679f4eb",
       lnk: "https://en.wikipedia.org/wiki/False_memory#Mandela_effect",
+      data: "airhose",
     },
     {
       tle: "Single- singular seed.",
@@ -44,6 +49,7 @@ const theitems = {
       pce: "Free, turned a sharp left and crashed into the court. During proceedings. During divorce.",
       img: "https://th.bing.com/th/id/OIP._p6YZRF_GfMT86xg6bWWdwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3b",
       lnk: "https://www.bing.com/aclk?ld=e8vJR-g6G3DGB6MfrZcV6V2DVUCUzkqDGBKAF_TFgXBchV5vHSjmuaC_84Jr_X8RrzdQPKA2EbLyKxd3gR6VfP4sZTGGw0A8ciCCwL6DvYzZHnUmocAe7OJrYhy-6wWs2yHaF66sk0DS9T69To_4KFgvjI6q7GocjwktleVthkrOiamXnE2B2H5sfWVQ_XMyr3Yckq3g&u=aHR0cHMlM2ElMmYlMmZ3d3cub25saW5lZGl2b3JjZS5jb20lMmZvbmxpbmUtZGl2b3JjZS1uZXcteW9yayUyZiUzZmgxJTNkTmV3JTI1MjBZb3JrJTI1MjBEaXZvcmNlJTI1MjBEb2N1bWVudHMlMjUyMFdpdGhvdXQlMjUyMEElMjUyMExhd3llciUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkVVMlMjUyMC0lMjUyME5ldyUyNTIwWW9yayUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY29udGVudCUzZE5ZX0xhd3llcl94cCUyNnV0bV90ZXJtJTNkZGl2b3JjZSUyNTIwbGF3eWVycyUyNmFkcG9zJTNkJTI2dXRtX3BsJTNkJTI2Y3IlM2QlMjZzYWR0JTNkJTI2Z2NsaWQlM2QlMjZleHBlcmltZW50JTNkJTI2ZXhwdmFyJTNkJTI2bXNjbGtpZCUzZDhlMzNjMmE0YWViODFjNGYwM2I2YWE0MzViNmUwZTc5&rlid=8e33c2a4aeb81c4f03b6aa435b6e0e79",
+      data:"seed",
     },
     {
       tle: "Single- singular seed.",
@@ -51,6 +57,7 @@ const theitems = {
       pce: "Free, won from the divorce",
       img: "https://th.bing.com/th/id/OIP._p6YZRF_GfMT86xg6bWWdwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3b",
       lnk: "https://www.bing.com/aclk?ld=e8vJR-g6G3DGB6MfrZcV6V2DVUCUzkqDGBKAF_TFgXBchV5vHSjmuaC_84Jr_X8RrzdQPKA2EbLyKxd3gR6VfP4sZTGGw0A8ciCCwL6DvYzZHnUmocAe7OJrYhy-6wWs2yHaF66sk0DS9T69To_4KFgvjI6q7GocjwktleVthkrOiamXnE2B2H5sfWVQ_XMyr3Yckq3g&u=aHR0cHMlM2ElMmYlMmZ3d3cub25saW5lZGl2b3JjZS5jb20lMmZvbmxpbmUtZGl2b3JjZS1uZXcteW9yayUyZiUzZmgxJTNkTmV3JTI1MjBZb3JrJTI1MjBEaXZvcmNlJTI1MjBEb2N1bWVudHMlMjUyMFdpdGhvdXQlMjUyMEElMjUyMExhd3llciUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkVVMlMjUyMC0lMjUyME5ldyUyNTIwWW9yayUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY29udGVudCUzZE5ZX0xhd3llcl94cCUyNnV0bV90ZXJtJTNkZGl2b3JjZSUyNTIwbGF3eWVycyUyNmFkcG9zJTNkJTI2dXRtX3BsJTNkJTI2Y3IlM2QlMjZzYWR0JTNkJTI2Z2NsaWQlM2QlMjZleHBlcmltZW50JTNkJTI2ZXhwdmFyJTNkJTI2bXNjbGtpZCUzZDhlMzNjMmE0YWViODFjNGYwM2I2YWE0MzViNmUwZTc5&rlid=8e33c2a4aeb81c4f03b6aa435b6e0e79",
+      data:"seed",
     },
     {
       tle: "Single- singular seed.",
@@ -58,6 +65,7 @@ const theitems = {
       pce: "Free, left me in the divorce",
       img: "https://th.bing.com/th/id/OIP._p6YZRF_GfMT86xg6bWWdwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3b",
       lnk: "https://www.bing.com/aclk?ld=e8vJR-g6G3DGB6MfrZcV6V2DVUCUzkqDGBKAF_TFgXBchV5vHSjmuaC_84Jr_X8RrzdQPKA2EbLyKxd3gR6VfP4sZTGGw0A8ciCCwL6DvYzZHnUmocAe7OJrYhy-6wWs2yHaF66sk0DS9T69To_4KFgvjI6q7GocjwktleVthkrOiamXnE2B2H5sfWVQ_XMyr3Yckq3g&u=aHR0cHMlM2ElMmYlMmZ3d3cub25saW5lZGl2b3JjZS5jb20lMmZvbmxpbmUtZGl2b3JjZS1uZXcteW9yayUyZiUzZmgxJTNkTmV3JTI1MjBZb3JrJTI1MjBEaXZvcmNlJTI1MjBEb2N1bWVudHMlMjUyMFdpdGhvdXQlMjUyMEElMjUyMExhd3llciUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkVVMlMjUyMC0lMjUyME5ldyUyNTIwWW9yayUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY29udGVudCUzZE5ZX0xhd3llcl94cCUyNnV0bV90ZXJtJTNkZGl2b3JjZSUyNTIwbGF3eWVycyUyNmFkcG9zJTNkJTI2dXRtX3BsJTNkJTI2Y3IlM2QlMjZzYWR0JTNkJTI2Z2NsaWQlM2QlMjZleHBlcmltZW50JTNkJTI2ZXhwdmFyJTNkJTI2bXNjbGtpZCUzZDhlMzNjMmE0YWViODFjNGYwM2I2YWE0MzViNmUwZTc5&rlid=8e33c2a4aeb81c4f03b6aa435b6e0e79",
+      data:"seed",
     },
     {
       tle: "Single- singular seed.",
@@ -65,6 +73,7 @@ const theitems = {
       pce: "Free, left over from the divorce",
       img: "https://th.bing.com/th/id/OIP._p6YZRF_GfMT86xg6bWWdwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3b",
       lnk: "https://www.bing.com/aclk?ld=e8vJR-g6G3DGB6MfrZcV6V2DVUCUzkqDGBKAF_TFgXBchV5vHSjmuaC_84Jr_X8RrzdQPKA2EbLyKxd3gR6VfP4sZTGGw0A8ciCCwL6DvYzZHnUmocAe7OJrYhy-6wWs2yHaF66sk0DS9T69To_4KFgvjI6q7GocjwktleVthkrOiamXnE2B2H5sfWVQ_XMyr3Yckq3g&u=aHR0cHMlM2ElMmYlMmZ3d3cub25saW5lZGl2b3JjZS5jb20lMmZvbmxpbmUtZGl2b3JjZS1uZXcteW9yayUyZiUzZmgxJTNkTmV3JTI1MjBZb3JrJTI1MjBEaXZvcmNlJTI1MjBEb2N1bWVudHMlMjUyMFdpdGhvdXQlMjUyMEElMjUyMExhd3llciUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkVVMlMjUyMC0lMjUyME5ldyUyNTIwWW9yayUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY29udGVudCUzZE5ZX0xhd3llcl94cCUyNnV0bV90ZXJtJTNkZGl2b3JjZSUyNTIwbGF3eWVycyUyNmFkcG9zJTNkJTI2dXRtX3BsJTNkJTI2Y3IlM2QlMjZzYWR0JTNkJTI2Z2NsaWQlM2QlMjZleHBlcmltZW50JTNkJTI2ZXhwdmFyJTNkJTI2bXNjbGtpZCUzZDhlMzNjMmE0YWViODFjNGYwM2I2YWE0MzViNmUwZTc5&rlid=8e33c2a4aeb81c4f03b6aa435b6e0e79",
+      data:"seed",
     },
   ],
   eternalEnemy: [
@@ -74,6 +83,7 @@ const theitems = {
       apce: 7,
       pce: "7 Bucks, Canadian. Nobody wants this.",
       img: "LOSANGOL.png",
+      data: "losangelos",
     },
     {
       lnk: "https://www.bing.com/ck/a?!&&p=08bb383aa21ddc438fa21cb304298bd0bf09e2dc97e958c6fd0adbf442691a24JmltdHM9MTc1ODA2NzIwMA&ptn=3&ver=2&hsh=4&fclid=2ccd128f-1513-69d6-2631-04ea14206861&psq=lint&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2xpbnQ",
@@ -81,6 +91,7 @@ const theitems = {
       apce: 80,
       pce: "80$ auction price.",
       img: "https://i.pinimg.com/736x/34/3c/30/343c30da58a7a3935e8b51c996094134.jpg",
+      data: "lintkitchen",
     },
     {
       lnk: "https://www.bing.com/videos/riverview/relatedvideo?q=baby+shark&&mid=07FEB0F7253CC37B37D707FEB0F7253CC37B37D7&mcid=BEE95343EA6A4B9E9E3431AB18E471D9&FORM=VCGVRP",
@@ -88,6 +99,7 @@ const theitems = {
       img: "https://www.ikea.com/us/en/images/products/blahaj-soft-toy-shark__0710175_pe727378_s5.jpg?f=xl",
       pce: "Liver (557000$)",
       apce: 557000,
+      data: "john",
     },
   ],
 };
@@ -166,7 +178,7 @@ function injectFictionlessButLiterallyJustWithoutClear(thing) {
     //to inject
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<a class="linkcard fiction" href="${Element.lnk}">
+      `<a class="linkcard fiction" href="${Element.lnk}" target='_blank'>
         <div class="card">
           <div class="cardsub">
             <h2 class="card-header">${Element.tle}</h2>
@@ -177,6 +189,10 @@ function injectFictionlessButLiterallyJustWithoutClear(thing) {
             />
           </div>
           <h3 class="price">${Element.pce}</h3>
+          <button 
+                class="addToCart"
+                onclick="alert('thing added. i think. also to the hyperlink you go')">Add to Cart
+            </button>
         </div>
       </a>`
     );
@@ -284,3 +300,7 @@ document.getElementById("normaltacular").addEventListener("click", () => {
   injectFictionlessButLiterallyJustWithoutClear(theitems.eternalEnemy);
   ALLMYSKRUNKLES();
 });
+
+function iHate() {
+  const clickyclack = document.querySelector(".addToCart");
+}

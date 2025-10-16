@@ -65,7 +65,7 @@ body {
 
 .price{
     width: 90%;
-    height: auto;
+    height: 2rem;
     margin: 20px auto;
     position: relative;
     font-size: 1rem;
@@ -231,4 +231,28 @@ button{
     font-size: 1.5rem;
     font-family: consolas, monospace;
     margin-top: -5px;
+}
+
+.itemsInCart{
+    width: 80%;
+    height: auto;
+    background-color: transparent;
+    margin: 10px auto;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 80px;
+    font-family: consolas, monospace;
+    color: green;
+}
+.shopify{
+    width: 50%;
+    height: 2rem;
+    background-color: black;
+    margin: 20px auto;
+}
+.honey{
+    color: green;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: consolas, monospace;
 }
