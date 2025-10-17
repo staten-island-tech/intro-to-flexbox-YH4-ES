@@ -190,7 +190,7 @@ function injectFictionlessButLiterallyJustWithoutClear(thing) {
           </div>
           <h3 class="price">${Element.pce}</h3>
           <button 
-                class="addToCart"
+                class="addToCart" data-name="${Element.data}" data-price="${Element.apce}"
                 onclick="alert('thing added. i think. also to the hyperlink you go')">Add to Cart
             </button>
         </div>
@@ -300,7 +300,21 @@ document.getElementById("normaltacular").addEventListener("click", () => {
   injectFictionlessButLiterallyJustWithoutClear(theitems.eternalEnemy);
   ALLMYSKRUNKLES();
 });
-
+const cart = [];
+const total = 0;
 function iHate() {
-  const clickyclack = document.querySelector(".addToCart");
-}
+  document.querySelectorAll(".addToCart").forEach((button) => {
+    button.addEventListener("click", () => {
+      console.log("added to cart");
+      const itemName = button.getAttribute("data-name");
+      const price = button.getAttribute("data-price");
+      cart.push({ name: itemName});
+      total += parseFloat(price);
+      console.log(cart, total);
+
+    });
+
+  });
+};
+
+iHate();
