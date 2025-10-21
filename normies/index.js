@@ -122,6 +122,7 @@ const DOMSelectors = {
   fictional: document.querySelectorAll(".fiction"),
   eternalEnemy: document.querySelectorAll(".eternal"),
   container: document.querySelector(".container"),
+  cartText: document.querySelector(".itemsInCart"),
 }; //losing my mind.
 
 /* function injectFiction() {
@@ -149,7 +150,7 @@ const DOMSelectors = {
 function injectFictionless(thing) {
   DOMSelectors.container.innerHTML = ""; //to clear
 
-  thing.forEach((Element) => {
+  thing.forEach((Element) => { //this is "resource intensive" but i dont care anymore
     //to inject
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
@@ -301,7 +302,7 @@ document.getElementById("normaltacular").addEventListener("click", () => {
   ALLMYSKRUNKLES();
 });
 const cart = [];
-const total = 0;
+let total = 0;
 function iHate() {
   document.querySelectorAll(".addToCart").forEach((button) => {
     button.addEventListener("click", () => {
@@ -310,7 +311,11 @@ function iHate() {
       const price = button.getAttribute("data-price");
       cart.push({ name: itemName});
       total += parseFloat(price);
-      console.log(cart, total);
+      console.log(cart, price);
+      DOMSelectors.cartText.insertAdjacentHTML(
+        "beforeend",
+        `<p class="spokenfor">${itemName}: $${price}</p>`
+      );
 
     });
 
