@@ -166,7 +166,7 @@ function injectFictionless(thing) {
           </div>
           <h3 class="price">${Element.pce}</h3>
           <button 
-                class="addToCart"
+                class="addToCart" data-name="${Element.data}" data-price="${Element.apce}"
                 onclick="alert('thing added. i think. also to the hyperlink you go')">Add to Cart
             </button>
         </div>
@@ -175,7 +175,7 @@ function injectFictionless(thing) {
   });
 }
 function injectFictionlessButLiterallyJustWithoutClear(thing) {
-  thing.forEach((Element) => {
+  thing.forEach((Element) => { //this is "resource intensive" but i dont care anymore
     //to inject
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
@@ -203,6 +203,7 @@ injectFictionlessButLiterallyJustWithoutClear(theitems.fiction);
 injectFictionlessButLiterallyJustWithoutClear(theitems.yARHAR);
 injectFictionlessButLiterallyJustWithoutClear(theitems.eternalEnemy);
 document.querySelector(".thecurrentShow").textContent = "Blahblahblah, lame";
+iHate();
 function thefiction() {
   document.querySelector(".toShowAndToKnow").textContent = "Now Showing:";
   document.querySelector(".thecurrentShow").textContent =
@@ -277,32 +278,15 @@ function ALLMYSKRUNKLES() {
   document.querySelector(".thecurrentShow").style.left = "72vw";
   document.getElementById("zenith").pause();
   document.getElementById("zenith").currentTime = 0;
-  ocument.getElementById("pirateMusic").pause();
+  document.getElementById("pirateMusic").pause();
   document.getElementById("pirateMusic").currentTime = 0;
   document.getElementById("plentyOfExuberance").pause();
   document.getElementById("plentyOfExuberance").currentTime = 0;
 } //REMINDER: ADD SONG
 
-document.getElementById("fictionbutton").addEventListener("click", () => {
-  injectFictionless(theitems.fiction);
-  thefiction();
-});
-document.getElementById("piratebutton").addEventListener("click", () => {
-  injectFictionless(theitems.yARHAR);
-  aPIRATEISTHEBESTTOBE();
-});
-document.getElementById("mynemesis").addEventListener("click", () => {
-  injectFictionless(theitems.eternalEnemy);
-  theEternal();
-});
-document.getElementById("normaltacular").addEventListener("click", () => {
-  injectFictionless(theitems.fiction);
-  injectFictionlessButLiterallyJustWithoutClear(theitems.yARHAR);
-  injectFictionlessButLiterallyJustWithoutClear(theitems.eternalEnemy);
-  ALLMYSKRUNKLES();
-});
 const cart = [];
 let total = 0;
+let counter = 0;
 function iHate() {
   document.querySelectorAll(".addToCart").forEach((button) => {
     button.addEventListener("click", () => {
@@ -316,10 +300,38 @@ function iHate() {
         "beforeend",
         `<p class="spokenfor">${itemName}: $${price}</p>`
       );
+      document.querySelector(".totalText").innerHTML = ""; //to clear
+      document.querySelector(".totalText").insertAdjacentHTML(
+        "afterbegin",
+        `Total: $${total}`
+      );
 
     });
 
   });
 };
 
-iHate();
+
+
+document.getElementById("fictionbutton").addEventListener("click", () => {
+  injectFictionless(theitems.fiction);
+  thefiction();
+  iHate();
+});
+document.getElementById("piratebutton").addEventListener("click", () => {
+  injectFictionless(theitems.yARHAR);
+  aPIRATEISTHEBESTTOBE();
+  iHate();
+});
+document.getElementById("mynemesis").addEventListener("click", () => {
+  injectFictionless(theitems.eternalEnemy);
+  theEternal();
+  iHate();
+});
+document.getElementById("normaltacular").addEventListener("click", () => {
+  injectFictionless(theitems.fiction);
+  injectFictionlessButLiterallyJustWithoutClear(theitems.yARHAR);
+  injectFictionlessButLiterallyJustWithoutClear(theitems.eternalEnemy);
+  ALLMYSKRUNKLES();
+  iHate();
+});

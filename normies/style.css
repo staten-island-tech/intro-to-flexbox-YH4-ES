@@ -5,6 +5,7 @@ body, html
     margin: 0px;
     padding: 0;
     overflow-x: hidden;
+    scrollbar-color: darkcyan transparent;
     
 
 }
@@ -217,6 +218,7 @@ button{
     height: 300px;
     background-color: black;
     margin: 20px auto;
+    scrollbar-color: greenyellow black;
 }
 .dumbCartDumb{
     color: greenyellow;
@@ -262,4 +264,25 @@ button{
 .addToCart{
     background-color: transparent;
     color: greenyellow;
+}
+
+.total{
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    margin: 20px auto;
+    color: greenyellow;
+}
+.totalText{
+    font-size: 1.5rem;
+    font-family: consolas, monospace;
+    padding-top: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+background: greenyellow;
 }
