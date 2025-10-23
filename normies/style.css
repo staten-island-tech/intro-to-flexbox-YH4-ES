@@ -1,288 +1,281 @@
-body, html
-*{
-    font-size: 10px;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0;
-    overflow-x: hidden;
-    scrollbar-color: darkcyan transparent;
-    
-
+body,
+html * {
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  overflow-x: hidden;
+  scrollbar-color: darkcyan transparent;
 }
 body {
-    background-color: rgb(1, 35, 51);
-
+  background-color: rgb(1, 35, 51);
 }
 
-.card{
-    width: 100%;
-    min-height: 450px;
-    background-color: darkcyan;
-    margin: 0 0;
-    border-radius: 20px;
-    left: 0;
-    position: relative;
-    height:auto;
-    line-break: normal;
-
-
+.card {
+  width: 100%;
+  min-height: 450px;
+  background-color: darkcyan;
+  margin: 0 0;
+  border-radius: 20px;
+  left: 0;
+  position: relative;
+  height: auto;
+  line-break: normal;
 }
 
 .container {
-    width: 90vw;
-    background-color: transparent;
-    margin: 30px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: absolute;
-   
+  width: 90vw;
+  background-color: transparent;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: absolute;
 }
 
-.card-img{
-    display: block;
-    width: 90%;
-    margin: 20px auto;
-    position: relative;
-    height: 70%;
-    border: 2px solid black;
-    object-fit: cover;
+.card-img {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  position: relative;
+  height: 70%;
+  border: 2px solid black;
+  object-fit: cover;
 }
 
-.card-header{
-    width: 90%;
-    height: auto;
-    margin: 20px auto;
-    position: relative;
-    font-size: 1.5rem;
-    color: white;
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: auto;
-    font-style: normal;
-    font-variation-settings:
-    "width" 100;
+.card-header {
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  position: relative;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+  font-variation-settings: "width" 100;
 }
 
-.price{
-    width: 90%;
-    height: 2rem;
-    margin: 20px auto;
-    position: relative;
-    font-size: 1rem;
-    top: 0;
+.price {
+  width: 90%;
+  height: 2rem;
+  margin: 20px auto;
+  position: relative;
+  font-size: 1rem;
+  top: 0;
 }
 
-.morelink{
-    display: block;
-    width: 90%;
-    margin: 20px auto;
-    line-break:strict;
+.morelink {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  line-break: strict;
 }
-.cardsub{
-    background-color: #0d171c;
-    height: 382.5px;
-    overflow: hidden;
-    border-radius: 15px 15px 20px 20px;
-}
-
-.linkcard{
-    width: 22%;
-    text-decoration: none;
-    min-height: 450px;
-    margin: 25px 0;
-    transition: 0.13s cubic-bezier(0,1.27,.81,1.29);
-    border-radius: 20px;
-    
-    box-shadow: 0px 0px 5px 2px black;
+.cardsub {
+  background-color: #0d171c;
+  height: 382.5px;
+  overflow: hidden;
+  border-radius: 15px 15px 20px 20px;
 }
 
-@media screen and (max-width: 1500px){
-    #Lint{
-        word-break: break-all;
-    }
-    .html{
-        background-color: red;
-    }
+.linkcard {
+  width: 22%;
+  text-decoration: none;
+  min-height: 450px;
+  margin: 25px 0;
+  transition: 0.13s cubic-bezier(0, 1.27, 0.81, 1.29);
+  border-radius: 20px;
+
+  box-shadow: 0px 0px 5px 2px black;
+}
+
+@media screen and (max-width: 1500px) {
+  #Lint {
+    word-break: break-all;
+  }
+  .html {
+    background-color: red;
+  }
 }
 @media screen and (max-width: 1200px) {
-    .toShowAndToKnow
-    {
-        left: 50%;
-        transform: translateX(-50vw);
-        max-width: 90%;
-        
-    }
-    .thecurrentShow{
-        left: 0;
-        transform: translateX(-50vw);
-        max-width: 90%;
-    }
-    .playItOnAndNeverStop{
-        left: 0;
-        top:0;
-        width: 50px;
-        position: relative;
-        transform: translateX(-30vw);
-    }
+  .toShowAndToKnow {
+    left: 50%;
+    transform: translateX(-50vw);
+    max-width: 90%;
+  }
+  .thecurrentShow {
+    left: 0;
+    transform: translateX(-50vw);
+    max-width: 90%;
+  }
+  .playItOnAndNeverStop {
+    left: 0;
+    top: 0;
+    width: 50px;
+    position: relative;
+    transform: translateX(-30vw);
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .container{
-        flex-direction: column;
-        transition-timing-function: cubic-bezier(.47,1.23,.75,1.11)
-    }
-    .linkcard{
-        width:100%
-    }
+  .container {
+    flex-direction: column;
+    transition-timing-function: cubic-bezier(0.47, 1.23, 0.75, 1.11);
+  }
+  .linkcard {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 740px) {
-    .playItOnAndNeverStop{
-        transform: translate(-10vw);
-    }
+  .playItOnAndNeverStop {
+    transform: translate(-10vw);
+  }
 }
 
-.linkcard:hover{
-    transform: translateY(20px) ;
+.linkcard:hover {
+  transform: translateY(20px);
 }
 
-.thethings{
-    display:block;
-    margin: 10px auto;
-    align-items: center;
+.thethings {
+  display: block;
+  margin: 10px auto;
+  align-items: center;
 }
 
-button{
-    background-color: rgb(1, 35, 51);
-    color: cadetblue;
-    font-size: 1.5rem;
-    border: 0;
-    padding: 10px 20px;
-    cursor: auto;
-    transition: 0.13s cubic-bezier(0,1.27,.81,1.29);
-    text-decoration: overline;
+button {
+  background-color: rgb(1, 35, 51);
+  color: cadetblue;
+  font-size: 1.5rem;
+  border: 0;
+  padding: 10px 20px;
+  cursor: auto;
+  transition: 0.13s cubic-bezier(0, 1.27, 0.81, 1.29);
+  text-decoration: overline;
 
-    cursor: pointer;
-}
-
-.toShowAndToKnow{
-    color: #e3f086;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 5px 5px;
-    font-family: 'Comic Sans MS', monospace;
-    position: relative;
-    width: fit-content;
-    left: 60%;
-    max-width: 40%;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    pointer-events: none;
-    z-index: 4;
-    position: relative
-}
-.thecurrentShow{
-    color: #e3f086;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 5px 5px;
-    font-family: 'Comic Sans MS', monospace;
-    position: relative;
-    width: fit-content;
-    left: 68%;
-    max-width: 40%;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    position: absolute;
-
+  cursor: pointer;
 }
 
-.whenYouKnowYourself{
-    display: flex;
-    align-items: center;
-    overflow-wrap: break-word;
-    padding: 0;
+.toShowAndToKnow {
+  color: #e3f086;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 5px 5px;
+  font-family: "Comic Sans MS", monospace;
+  position: relative;
+  width: fit-content;
+  left: 60%;
+  max-width: 40%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  pointer-events: none;
+  z-index: 4;
+  position: relative;
+}
+.thecurrentShow {
+  color: #e3f086;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 5px 5px;
+  font-family: "Comic Sans MS", monospace;
+  position: relative;
+  width: fit-content;
+  left: 68%;
+  max-width: 40%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  position: absolute;
 }
 
-.playItOnAndNeverStop{
-    width: 170px;
-    position: absolute;
-    left: 84%;
-    top:6px;
-    margin: 0px;
-    
+.whenYouKnowYourself {
+  display: flex;
+  align-items: center;
+  overflow-wrap: break-word;
+  padding: 0;
 }
 
-.cart{
-    width: 50%;
-    height: 300px;
-    background-color: black;
-    margin: 20px auto;
-    scrollbar-color: greenyellow black;
-}
-.dumbCartDumb{
-    color: greenyellow;
-    text-align: center;
-    font-size: 3rem;
-    padding: 50px 0;
-    font-family: consolas, monospace;
-}
-.extra{
-    color: green;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: consolas, monospace;
-    margin-top: -5px;
+.playItOnAndNeverStop {
+  width: 170px;
+  position: absolute;
+  left: 84%;
+  top: 6px;
+  margin: 0px;
 }
 
-.itemsInCart{
-    width: 80%;
-    height: auto;
-    background-color: transparent;
-    margin: 10px auto;
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 80px;
-    font-family: consolas, monospace;
-    color: green;
+.cart {
+  width: 50%;
+  height: 300px;
+  background-color: black;
+  margin: 20px auto;
+  scrollbar-color: greenyellow black;
 }
-.shopify{
-    width: 50%;
-    height: 2rem;
-    background-color: black;
-    margin: 20px auto;
+.dumbCartDumb {
+  color: greenyellow;
+  text-align: center;
+  font-size: 3rem;
+  padding: 50px 0;
+  font-family: consolas, monospace;
 }
-.honey{
-    color: green;
-    text-align: left;
-    font-size: 1.5rem;
-    font-family: consolas, monospace;
-}
-.spokenfor{
-    font-size: 1.5rem;
-}
-.addToCart{
-    background-color: transparent;
-    color: greenyellow;
+.extra {
+  color: green;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: consolas, monospace;
+  margin-top: -5px;
 }
 
-.total{
-    width: 50%;
-    height: 50px;
-    background-color: black;
-    margin: 20px auto;
-    color: greenyellow;
+.itemsInCart {
+  width: 80%;
+  height: auto;
+  background-color: transparent;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 80px;
+  font-family: consolas, monospace;
+  color: green;
 }
-.totalText{
-    font-size: 1.5rem;
-    font-family: consolas, monospace;
-    padding-top: 10px;
+.shopify {
+  width: 50%;
+  height: 2rem;
+  background-color: black;
+  margin: 20px auto;
+}
+.honey {
+  color: green;
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: consolas, monospace;
+}
+.spokenfor {
+  font-size: 1.5rem;
+}
+.addToCart {
+  background-color: transparent;
+  color: greenyellow;
+}
+
+.total {
+  width: 50%;
+  height: 50px;
+  background-color: black;
+  margin: 20px auto;
+  color: greenyellow;
+}
+.totalText {
+  font-size: 1.5rem;
+  font-family: consolas, monospace;
+  padding-top: 10px;
 }
 
 ::-webkit-scrollbar-track {
-background: transparent;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-background: greenyellow;
+  background: greenyellow;
+}
+
+.honey {
+  cursor: pointer;
 }

@@ -49,7 +49,7 @@ const theitems = {
       pce: "Free, turned a sharp left and crashed into the court. During proceedings. During divorce.",
       img: "https://th.bing.com/th/id/OIP._p6YZRF_GfMT86xg6bWWdwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3b",
       lnk: "https://www.bing.com/aclk?ld=e8vJR-g6G3DGB6MfrZcV6V2DVUCUzkqDGBKAF_TFgXBchV5vHSjmuaC_84Jr_X8RrzdQPKA2EbLyKxd3gR6VfP4sZTGGw0A8ciCCwL6DvYzZHnUmocAe7OJrYhy-6wWs2yHaF66sk0DS9T69To_4KFgvjI6q7GocjwktleVthkrOiamXnE2B2H5sfWVQ_XMyr3Yckq3g&u=aHR0cHMlM2ElMmYlMmZ3d3cub25saW5lZGl2b3JjZS5jb20lMmZvbmxpbmUtZGl2b3JjZS1uZXcteW9yayUyZiUzZmgxJTNkTmV3JTI1MjBZb3JrJTI1MjBEaXZvcmNlJTI1MjBEb2N1bWVudHMlMjUyMFdpdGhvdXQlMjUyMEElMjUyMExhd3llciUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkVVMlMjUyMC0lMjUyME5ldyUyNTIwWW9yayUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY29udGVudCUzZE5ZX0xhd3llcl94cCUyNnV0bV90ZXJtJTNkZGl2b3JjZSUyNTIwbGF3eWVycyUyNmFkcG9zJTNkJTI2dXRtX3BsJTNkJTI2Y3IlM2QlMjZzYWR0JTNkJTI2Z2NsaWQlM2QlMjZleHBlcmltZW50JTNkJTI2ZXhwdmFyJTNkJTI2bXNjbGtpZCUzZDhlMzNjMmE0YWViODFjNGYwM2I2YWE0MzViNmUwZTc5&rlid=8e33c2a4aeb81c4f03b6aa435b6e0e79",
-      data:"seed",
+      data: "seed",
     },
     {
       tle: "Single- singular seed.",
@@ -57,7 +57,7 @@ const theitems = {
       pce: "Free, won from the divorce",
       img: "https://th.bing.com/th/id/OIP._p6YZRF_GfMT86xg6bWWdwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3b",
       lnk: "https://www.bing.com/aclk?ld=e8vJR-g6G3DGB6MfrZcV6V2DVUCUzkqDGBKAF_TFgXBchV5vHSjmuaC_84Jr_X8RrzdQPKA2EbLyKxd3gR6VfP4sZTGGw0A8ciCCwL6DvYzZHnUmocAe7OJrYhy-6wWs2yHaF66sk0DS9T69To_4KFgvjI6q7GocjwktleVthkrOiamXnE2B2H5sfWVQ_XMyr3Yckq3g&u=aHR0cHMlM2ElMmYlMmZ3d3cub25saW5lZGl2b3JjZS5jb20lMmZvbmxpbmUtZGl2b3JjZS1uZXcteW9yayUyZiUzZmgxJTNkTmV3JTI1MjBZb3JrJTI1MjBEaXZvcmNlJTI1MjBEb2N1bWVudHMlMjUyMFdpdGhvdXQlMjUyMEElMjUyMExhd3llciUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkVVMlMjUyMC0lMjUyME5ldyUyNTIwWW9yayUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY29udGVudCUzZE5ZX0xhd3llcl94cCUyNnV0bV90ZXJtJTNkZGl2b3JjZSUyNTIwbGF3eWVycyUyNmFkcG9zJTNkJTI2dXRtX3BsJTNkJTI2Y3IlM2QlMjZzYWR0JTNkJTI2Z2NsaWQlM2QlMjZleHBlcmltZW50JTNkJTI2ZXhwdmFyJTNkJTI2bXNjbGtpZCUzZDhlMzNjMmE0YWViODFjNGYwM2I2YWE0MzViNmUwZTc5&rlid=8e33c2a4aeb81c4f03b6aa435b6e0e79",
-      data:"seed",
+      data: "seed",
     },
     {
       tle: "Single- singular seed.",
@@ -65,7 +65,7 @@ const theitems = {
       pce: "Free, left me in the divorce",
       img: "https://th.bing.com/th/id/OIP._p6YZRF_GfMT86xg6bWWdwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3b",
       lnk: "https://www.bing.com/aclk?ld=e8vJR-g6G3DGB6MfrZcV6V2DVUCUzkqDGBKAF_TFgXBchV5vHSjmuaC_84Jr_X8RrzdQPKA2EbLyKxd3gR6VfP4sZTGGw0A8ciCCwL6DvYzZHnUmocAe7OJrYhy-6wWs2yHaF66sk0DS9T69To_4KFgvjI6q7GocjwktleVthkrOiamXnE2B2H5sfWVQ_XMyr3Yckq3g&u=aHR0cHMlM2ElMmYlMmZ3d3cub25saW5lZGl2b3JjZS5jb20lMmZvbmxpbmUtZGl2b3JjZS1uZXcteW9yayUyZiUzZmgxJTNkTmV3JTI1MjBZb3JrJTI1MjBEaXZvcmNlJTI1MjBEb2N1bWVudHMlMjUyMFdpdGhvdXQlMjUyMEElMjUyMExhd3llciUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkVVMlMjUyMC0lMjUyME5ldyUyNTIwWW9yayUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY29udGVudCUzZE5ZX0xhd3llcl94cCUyNnV0bV90ZXJtJTNkZGl2b3JjZSUyNTIwbGF3eWVycyUyNmFkcG9zJTNkJTI2dXRtX3BsJTNkJTI2Y3IlM2QlMjZzYWR0JTNkJTI2Z2NsaWQlM2QlMjZleHBlcmltZW50JTNkJTI2ZXhwdmFyJTNkJTI2bXNjbGtpZCUzZDhlMzNjMmE0YWViODFjNGYwM2I2YWE0MzViNmUwZTc5&rlid=8e33c2a4aeb81c4f03b6aa435b6e0e79",
-      data:"seed",
+      data: "seed",
     },
     {
       tle: "Single- singular seed.",
@@ -73,7 +73,7 @@ const theitems = {
       pce: "Free, left over from the divorce",
       img: "https://th.bing.com/th/id/OIP._p6YZRF_GfMT86xg6bWWdwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3b",
       lnk: "https://www.bing.com/aclk?ld=e8vJR-g6G3DGB6MfrZcV6V2DVUCUzkqDGBKAF_TFgXBchV5vHSjmuaC_84Jr_X8RrzdQPKA2EbLyKxd3gR6VfP4sZTGGw0A8ciCCwL6DvYzZHnUmocAe7OJrYhy-6wWs2yHaF66sk0DS9T69To_4KFgvjI6q7GocjwktleVthkrOiamXnE2B2H5sfWVQ_XMyr3Yckq3g&u=aHR0cHMlM2ElMmYlMmZ3d3cub25saW5lZGl2b3JjZS5jb20lMmZvbmxpbmUtZGl2b3JjZS1uZXcteW9yayUyZiUzZmgxJTNkTmV3JTI1MjBZb3JrJTI1MjBEaXZvcmNlJTI1MjBEb2N1bWVudHMlMjUyMFdpdGhvdXQlMjUyMEElMjUyMExhd3llciUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkVVMlMjUyMC0lMjUyME5ldyUyNTIwWW9yayUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY29udGVudCUzZE5ZX0xhd3llcl94cCUyNnV0bV90ZXJtJTNkZGl2b3JjZSUyNTIwbGF3eWVycyUyNmFkcG9zJTNkJTI2dXRtX3BsJTNkJTI2Y3IlM2QlMjZzYWR0JTNkJTI2Z2NsaWQlM2QlMjZleHBlcmltZW50JTNkJTI2ZXhwdmFyJTNkJTI2bXNjbGtpZCUzZDhlMzNjMmE0YWViODFjNGYwM2I2YWE0MzViNmUwZTc5&rlid=8e33c2a4aeb81c4f03b6aa435b6e0e79",
-      data:"seed",
+      data: "seed",
     },
   ],
   eternalEnemy: [
@@ -150,7 +150,8 @@ const DOMSelectors = {
 function injectFictionless(thing) {
   DOMSelectors.container.innerHTML = ""; //to clear
 
-  thing.forEach((Element) => { //this is "resource intensive" but i dont care anymore
+  thing.forEach((Element) => {
+    //this is "resource intensive" but i dont care anymore
     //to inject
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
@@ -175,7 +176,8 @@ function injectFictionless(thing) {
   });
 }
 function injectFictionlessButLiterallyJustWithoutClear(thing) {
-  thing.forEach((Element) => { //this is "resource intensive" but i dont care anymore
+  thing.forEach((Element) => {
+    //this is "resource intensive" but i dont care anymore
     //to inject
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
@@ -247,7 +249,7 @@ function theEternal() {
 function aPIRATEISTHEBESTTOBE() {
   document.querySelector(".toShowAndToKnow").textContent = "Now Showing:";
   document.querySelector(".thecurrentShow").textContent =
-    "YEE MATIES WE GON' SET SAIL ON HIGHER SEAS THAN YER' MOM WENT FO' THE DRINKS ON THIS OL BANDWAGON O LIES YE HEAR CAUS' WHEN THYNE SMOKE I SMOKE EM' BIG AND YA' DONT WANNA SAW'N BIG TILL YA' DON' 'N LIKE YESTER'S SHAMPOO. WHEN YOU MEET DAVEY JONES IN HE LOCKER INVITEHIM FOR A ROUND O BASEKET O BALL WITH LE THE BRON JAH AMES ON THE FIELD DOING BACKLINERS AR MATEY";
+    "YEE MATIES WE GON' SET SAIL ON HIGHER SEAS THAN YER' MOM WENT FO' THE DRINKS ON THIS OL BANDWAGON O LIES YE HEAR CAUS' WHEN THYNE SMOKE I SMOKE EM' BIG AND YA' DONT WANNA SAW'N BIG TILL YA' DON' 'N LIKE YESTER'S SHAMPOO. WHEN YOU MEET DAVEY JONES IN HE LOCKER INVITEHIM FOR A ROUND O BASEKET O BALL WITH LE THE BRON JAH AMES ON THE FIELD DOING BACKLINERS AR MATEY. HOW DOES THEE KNOW YE YOND FOOTBALL FROM FOOTBALL SO FAR IN FUTE? I BUILT MEESELF AYE TIME MACHINE, SALLY. I DID IT. IM DOCTOR WHO BEFORE I KNEW WHO DOCTOR WHO WAS. NOW I KNOW THAT HE'S BRITISH. IM GOING TO SET FIRE ON HOLLYWOOD.";
   document.getElementById("pirateMusic").volume = 0.3;
   document.getElementById("pirateMusic").play();
   document.querySelector(".playItOnAndNeverStop").src = "recordingme.png";
@@ -293,25 +295,31 @@ function iHate() {
       console.log("added to cart");
       const itemName = button.getAttribute("data-name");
       const price = button.getAttribute("data-price");
-      cart.push({ name: itemName});
+      cart.push({ name: itemName });
       total += parseFloat(price);
       console.log(cart, price);
+      button.preventDefault;
       DOMSelectors.cartText.insertAdjacentHTML(
         "beforeend",
         `<p class="spokenfor">${itemName}: $${price}</p>`
       );
       document.querySelector(".totalText").innerHTML = ""; //to clear
-      document.querySelector(".totalText").insertAdjacentHTML(
-        "afterbegin",
-        `Total: $${total}`
-      );
-
+      document
+        .querySelector(".totalText")
+        .insertAdjacentHTML("afterbegin", `Total: $${total}`);
     });
-
   });
-};
+}
 
+function buystuff() {
+  document.querySelector(".honey").addEventListener("click", () => {
+    alert(
+      "Exact money taken from your bank account. All items to be delivered to nearest post: Venus"
+    );
+  });
+}
 
+buystuff();
 
 document.getElementById("fictionbutton").addEventListener("click", () => {
   injectFictionless(theitems.fiction);
