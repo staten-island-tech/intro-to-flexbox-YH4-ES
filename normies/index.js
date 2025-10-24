@@ -306,7 +306,7 @@ function iHate() {
       document.querySelector(".totalText").innerHTML = ""; //to clear
       document
         .querySelector(".totalText")
-        .insertAdjacentHTML("afterbegin", `Total: $${total}`);
+        .insertAdjacentHTML("afterbegin", `Total: ${total} BuckaRoonoMammaMia's`);
     });
   });
 }
@@ -314,7 +314,7 @@ function iHate() {
 function buystuff() {
   document.querySelector(".honey").addEventListener("click", () => {
     alert(
-      "Exact money taken from your bank account. All items to be delivered to nearest post: Venus"
+      "Exact money taken from your bank account (Rounded to the nearest millionth). All items to be delivered to nearest post: Venus"
     );
   });
 }
