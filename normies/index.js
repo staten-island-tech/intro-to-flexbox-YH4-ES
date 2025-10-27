@@ -30,7 +30,7 @@ const theitems = {
     {
       tle: "Slightly larger piece of lint",
       apce: 18,
-      pce: "18 Dollars worth of Bitcoin, Haggleable.",
+      pce: "18 Dollars worth of 12 Bitcoin, Haggleable.",
       img: "https://lhtcooling.com/wp-content/uploads/2019/11/Lint-from-dryer-vent-1.jpg",
       lnk: "https://www.bing.com/ck/a?!&&p=1bbe8a6a756a348f130b12dc7ce92e84adab890802e4a42cd6e47c7464b16994JmltdHM9MTc1ODA2NzIwMA&ptn=3&ver=2&hsh=4&fclid=2ccd128f-1513-69d6-2631-04ea14206861&psq=moss&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTW9zcw",
       data: "biglint",
@@ -168,10 +168,10 @@ function injectFictionless(thing) {
           <h3 class="price">${Element.pce}</h3>
           <button 
                 class="addToCart" data-name="${Element.data}" data-price="${Element.apce}"
-                onclick="alert('thing added. i think. also to the hyperlink you go')">Add to Cart
+                onclick="alert('thing added. i think.');return false;">Add to Cart
             </button>
         </div>
-      </a>`
+      </a>` // i have no clue why return false works instead of preventdefault
     );
   });
 }
@@ -194,7 +194,7 @@ function injectFictionlessButLiterallyJustWithoutClear(thing) {
           <h3 class="price">${Element.pce}</h3>
           <button 
                 class="addToCart" data-name="${Element.data}" data-price="${Element.apce}"
-                onclick="alert('thing added. i think. also to the hyperlink you go')">Add to Cart
+                onclick="alert('thing added. i think.'); return false">Add to Cart
             </button>
         </div>
       </a>`
@@ -314,8 +314,12 @@ function iHate() {
 function buystuff() {
   document.querySelector(".honey").addEventListener("click", () => {
     alert(
-      "Exact money taken from your bank account (Rounded to the nearest millionth). All items to be delivered to nearest post: Venus"
+      "Exact money taken from your bank account (Rounded to the nearest millionth). \n \nAll items to be delivered to nearest post: Venus"
     );
+    cart.length = 0;
+    total = 0;
+    DOMSelectors.cartText.innerHTML = "";
+    document.querySelector(".totalText").innerHTML = "";
   });
 }
 

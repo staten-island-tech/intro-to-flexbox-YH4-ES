@@ -21,6 +21,7 @@ body {
   position: relative;
   height: auto;
   line-break: normal;
+  font-family: "Inconsolata", monospace;
 }
 
 .container {
@@ -59,8 +60,8 @@ body {
 
 .price {
   width: 90%;
-  height: 2rem;
-  margin: 20px auto;
+  height: 3rem;
+  margin: 10px auto;
   position: relative;
   font-size: 1rem;
   top: 0;
