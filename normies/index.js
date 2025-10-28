@@ -310,7 +310,9 @@ function iHate() {
     });
   });
 }
-
+let john = 6; //john code
+john /= 8;
+console.log(john);
 function buystuff() {
   document.querySelector(".honey").addEventListener("click", () => {
     alert(
