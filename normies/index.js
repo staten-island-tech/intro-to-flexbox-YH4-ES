@@ -349,3 +349,8 @@ document.getElementById("normaltacular").addEventListener("click", () => {
   ALLMYSKRUNKLES();
   iHate();
 });
+
+function flashbang() {
+  document.body.style.transition = "background-color 0.5s ease";
+  document.body.style.backgroundColor = "white";
+}
