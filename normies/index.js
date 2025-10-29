@@ -147,6 +147,10 @@ const DOMSelectors = {
   document.getElementById("fictionbutton").style.color="pink";
 
 } */ //YOU KNOW I WOULD INFINITELY RATHER DO THIS BUT I CANT APPARENTLY
+function showfiction(thing2) {
+  DOMSelectors.container.forEach((item) => {
+    
+}
 function injectFictionless(thing) {
   DOMSelectors.container.innerHTML = ""; //to clear
 
@@ -322,6 +326,7 @@ function buystuff() {
     total = 0;
     DOMSelectors.cartText.innerHTML = "";
     document.querySelector(".totalText").innerHTML = "";
+    //veryrealcodethattotallytakesmoneyfromyourbankaccount()
   });
 }
 
