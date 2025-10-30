@@ -148,9 +148,8 @@ const DOMSelectors = {
 
 } */ //YOU KNOW I WOULD INFINITELY RATHER DO THIS BUT I CANT APPARENTLY
 function showfiction(thing2) {
-  DOMSelectors.container.forEach((item) => {
-    
-}
+  DOMSelectors.container
+};
 function injectFictionless(thing) {
   DOMSelectors.container.innerHTML = ""; //to clear
 
